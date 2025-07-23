@@ -28,27 +28,4 @@ proyecto/
 └── .gitignore
 └── README.md
 ```
-
-## 🚀 Cómo trabajar con el proyecto
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/nr-reparaciones.git
-   cd nr-reparaciones
-   ```
-
-2. Instalar Live Sass Compiler (VSCode) o compilar con `sass` manualmente:
-   ```bash
-   sass scss/styles.scss css/styles.css
-   ```
-
-3. Subir cambios:
-   ```bash
-   git add .
-   git commit -m "Actualización SCSS y estilos"
-   git push origin main
-   ```
-
----
-
 © 2025 NR Reparaciones
