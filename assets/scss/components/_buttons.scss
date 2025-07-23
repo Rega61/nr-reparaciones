@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
+.button {
+  @include mixins.sombra-box(0, 4px, 8px, vars.$shadow-strong);
+}
+
+.btn-outline-success {
+  width: 100%;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  @include mixins.transición(background-color 0.3s ease, color 0.3s ease);
+  @include mixins.sombra-box(0, 4px, 8px, vars.$shadow-strong);
+
+  &:hover,
+  &:focus {
+    background-color: vars.$color-secundario;
+    color: white;
+    box-shadow: 0 6px 12px rgba(55, 198, 138, 0.6);
+    outline: none;
+  }
+}
+
+section.text-center a.btn-success {
+  background-color: vars.$color-secundario;
+  border-color: vars.$color-secundario;
+  font-weight: 700;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @include mixins.transición(background-color 0.3s ease);
+  box-shadow: 0 6px 15px rgba(55, 198, 138, 0.5);
+  border-radius: vars.$border-radius-base;
+
+  &:hover,
+  &:focus {
+    background-color: vars.$color-secundario-hover;
+    border-color: vars.$color-secundario-hover;
+    box-shadow: 0 8px 20px rgba(47, 168, 113, 0.7);
+    outline: none;
+  }
+}
+
+// Animación para hover en botón principal
+.btn-principal:hover {
+  animation-name: bounceIn !important;
+  animation-duration: 1s;
+}

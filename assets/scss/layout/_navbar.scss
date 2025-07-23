@@ -1,0 +1,54 @@
+// layout/_navbar.scss
+
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
+.navbar {
+  background-color: rgba(198, 237, 220, 0.5);
+  box-shadow: 0 2px 8px vars.$shadow-light;
+
+  .navbar-brand {
+    font-weight: 700;
+    color: vars.$color-texto;
+
+    img {
+      margin-right: 0.5rem;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: vars.$color-texto !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link.active,
+  .nav-link:focus {
+    color: vars.$color-secundario !important;
+    font-weight: 700;
+    outline: none;
+  }
+
+  @include mixins.breakpoint(small) {
+    padding: 0.5rem 1rem;
+
+    .navbar-brand {
+      font-size: 1.1rem;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}

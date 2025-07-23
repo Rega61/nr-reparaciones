@@ -1,0 +1,38 @@
+/* base/_reset.scss */
+
+/* Reset básico y box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Eliminar estilos por defecto de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Normalizar fuentes en inputs, buttons, textarea */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Base para body */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mejorar foco para accesibilidad */
+:focus {
+  outline: 2px solid #3CB371;
+  outline-offset: 2px;
+}

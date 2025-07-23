@@ -1,0 +1,37 @@
+// Colores principales
+$color-principal: #3CB371;           // Verde menta
+$color-secundario: #2E8B57;          // Verde oscuro
+$color-secundario-hover: #276749;    // Verde más oscuro para hover
+$color-texto: #222222;               // Texto oscuro
+$color-texto-secundario: #495057;    // Texto gris oscuro (usado en cards, etc)
+
+// Fondos
+$background-light: #f8f9fa;          // Fondo claro
+$background-translucido: rgba(248, 249, 250, 0.85); // Fondo translúcido claro
+
+// Sombras
+$shadow-light: rgba(0, 0, 0, 0.1);
+$shadow-medium: rgba(0, 0, 0, 0.2);
+$shadow-strong: rgba(0, 0, 0, 0.35);  // Sombra fuerte para botones y cajas
+
+// Tipografía
+$font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Tamaños y espacios
+$border-radius-base: 12px;
+$padding-base: 1rem;
+$max-width-container: 720px;
+
+// Colores en formato RGB para usar con rgba()
+$color-principal-rgb: 60, 179, 113;
+$color-secundario-rgb: 46, 139, 87;
+
+// Transiciones
+$transition-default: all 0.3s ease;
+
+// Z-indexes
+$zindex-navbar: 1030;
+$zindex-whatsapp: 1050;
+
+// Utilitarios opcionales
+$whatsapp-size: 60px;

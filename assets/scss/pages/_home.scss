@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as vars;
+
+#NR {
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: vars.$color-principal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    animation: fadeDown 2s ease-in-out;
+  }
+
+  p.lead {
+    font-size: 1.25rem;
+    color: #333;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

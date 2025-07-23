@@ -1,0 +1,47 @@
+// abstracts/_mixins.scss
+
+// Centrar con flexbox (horizontal y vertical)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Transiciones con propiedades flexibles
+@mixin transición($propiedades...) {
+  transition: $propiedades;
+}
+
+// Sombra para cajas (box-shadow)
+@mixin sombra-box($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Flexbox con dirección, justificación y alineación personalizables
+@mixin flex-custom($direccion: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Texto truncado con puntos suspensivos
+@mixin texto-truncado($ancho) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: $ancho;
+}
+
+// Media queries responsive
+@mixin breakpoint($punto) {
+  @if $punto == small {
+    @media (max-width: 576px) { @content; }
+  } @else if $punto == medium {
+    @media (max-width: 768px) { @content; }
+  } @else if $punto == large {
+    @media (max-width: 992px) { @content; }
+  } @else if $punto == xlarge {
+    @media (max-width: 1200px) { @content; }
+  }
+}

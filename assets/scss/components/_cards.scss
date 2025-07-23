@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
+.card {
+  border-radius: 12px;
+  background: #f0faf4; // Podrías reemplazar por una variable si querés
+  @include mixins.sombra-box(0, 6px, 12px, vars.$shadow-light);
+  @include mixins.transición(transform 0.3s ease, box-shadow 0.3s ease);
+  color: vars.$color-texto;
+
+  &:hover {
+    transform: translateY(-8px);
+    @include mixins.sombra-box(0, 12px, 24px, vars.$shadow-medium);
+  }
+
+  .card-body {
+    i {
+      color: vars.$color-secundario;
+    }
+  }
+
+  .card-title {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: vars.$color-texto-secundario; // Si no la tenés, la podemos agregar a variables
+  }
+}

@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as vars;
+
+footer {
+  background-color: rgba(198, 237, 220, 0.4);
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 600;
+  color: vars.$color-texto;
+  box-shadow: inset 0 1px 3px vars.$shadow-light;
+  margin-top: auto;
+
+  // Para efecto de fondo difuminado en navegadores que soportan backdrop-filter
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+}

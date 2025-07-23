@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Reparación de celulares, computadoras e impresoras en Laguna Paiva. Atención rápida y personalizada." />
+  <meta name="keywords" content="NR Reparaciones, celulares, computadoras, impresoras, Laguna Paiva" />
+  <meta name="author" content="NR Reparaciones" />
+  <title>NR Reparaciones</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS compilado desde SASS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Librerías externas -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm" aria-label="Navegación principal">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <img src="assets/imagenes/nr_logo.png" alt="Logo NR Reparaciones" width="40" height="40" />
+        <span class="ms-2 fw-bold text-success">NR Reparaciones</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio" aria-current="page">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/horarios.html">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/comentarios.html">Comentarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acerca">Nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main id="inicio" class="container my-5">
+    <section id="NR" class="section" tabindex="-1">
+      <h1 class="text-center fw-bold mb-4">NR Reparaciones</h1>
+      <p class="lead text-center mb-4">
+        Combinamos rapidez, calidad y atención para que tu tecnología nunca te falle cuando más la necesitás.
+      </p>
+      <div class="text-center">
+        <a href="pages/contacto.html" 
+           class="btn-principal btn btn-success btn-lg px-4 fw-semibold animate__animated animate__bounceIn"
+           role="button">
+          Contáctanos
+        </a>
+      </div>
+    </section>
+
+    <section id="acerca" class="section mt-5" tabindex="-1">
+      <h2 class="text-center fw-bold mb-4">🏪 Acerca de Nosotros</h2>
+      <p>
+        En <strong>NR Reparaciones</strong> somos un pequeño local con una gran pasión: la tecnología. Nos dedicamos con compromiso y responsabilidad a la <strong>reparación de celulares, computadoras e impresoras</strong>, ofreciendo soluciones eficientes y a medida.
+      </p>
+      <p>
+        Además, contamos con un servicio de <strong>venta de accesorios</strong> y una selección especial de <strong>equipos nuevos y usados</strong>, cuidadosamente revisados y garantizados para que tengas siempre lo mejor a tu alcance.
+      </p>
+      <p>
+        Nos destacamos por brindar una <strong>atención personalizada</strong>, <strong>diagnósticos precisos</strong> y <strong>reparaciones rápidas</strong>, porque entendemos lo importante que es para vos mantener tus dispositivos funcionando como el primer día. En NR Reparaciones, tu confianza es nuestra prioridad.
+      </p>
+    </section>
+
+    <section id="Imagen-local" class="section mt-5" tabindex="-1">
+      <h2 class="text-center fw-bold mb-4" data-aos="fade-up">🏪 Nuestro Local</h2>
+      <div class="text-center">
+        <img src="assets/imagenes/cel.jpg"
+             alt="Imagen del local NR Reparaciones"
+             class="img-fluid rounded shadow-sm"
+             data-aos="zoom-in"
+             data-aos-duration="2000"
+             data-aos-delay="200"
+             data-aos-once="true" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón flotante WhatsApp -->
+  <a 
+    href="https://wa.me/543426141503" 
+    class="whatsapp-float" 
+    target="_blank" 
+    aria-label="Contactar por WhatsApp"
+  >
+    <img src="assets/imagenes/wpplogo.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 mt-auto">
+    <p class="mb-0">&copy; 2025 NR Reparaciones. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Inicializar AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
