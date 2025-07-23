@@ -1,43 +1,54 @@
 @use '../abstracts/variables' as vars;
 
 .seccion-servicios {
-  background-color: vars.$background-light; // gris claro
+  background-color: vars.$background-translucido; // fondo translúcido claro
   padding: 3rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px vars.$shadow-medium;
+  color: vars.$color-texto; // texto oscuro para el contenido
 
   .card {
+    background-color: rgba(255, 255, 255, 0.75); // blanco translúcido para las cards
     border: none;
-    background-color: rgba(255, 255, 255, 0.75); // fondo blanco translúcido
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     border-radius: 0.75rem;
-    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
-    i.bi {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: vars.$color-principal; // verde menta
-      transition: transform 0.3s ease;
-    }
+    .card-body {
+      text-align: center;
 
-    &:hover i.bi {
-      transform: scale(1.1);
-    }
+      i.bi {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: vars.$color-principal;
+        transition: transform 0.3s ease;
+      }
 
-    .card-title {
-      font-weight: 600;
-      color: #343a40; // gris oscuro para contraste
-    }
+      &:hover i.bi {
+        transform: scale(1.1);
+      }
 
-    .card-text {
-      color: #495057; // gris medio
+      .card-title {
+        font-weight: 700;
+        color: vars.$color-principal;
+      }
+
+      .card-text {
+        color: vars.$color-texto-secundario;
+      }
     }
   }
+}
+
+.header-translucido {
+  background-color: rgba(vars.$color-principal-rgb..., 0.85);
+  padding: 2rem 1rem;
+  border-radius: vars.$border-radius-base;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
